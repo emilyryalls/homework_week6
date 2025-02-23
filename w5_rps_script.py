@@ -1,7 +1,7 @@
-from rps_module import user_greeting, get_user_choice, get_computer_choice, determine_winner, play_again
+from w5_rps_module import user_greeting, get_user_choice, get_computer_choice, determine_winner, play_again
 
 print('='*20, "🪨📃✂️ Get into Tech Games 2025: Rock Paper Scissors ✂️📃🪨", '='*20)
-name = input("Enter your name to begin the game: ")
+name = input("Enter your name to start the game: ")
 greeting = user_greeting(name, message='')
 print(greeting)
 

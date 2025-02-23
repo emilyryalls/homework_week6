@@ -43,7 +43,8 @@ def get_user_choice():
         user_input = input("Enter R (Rock), P (Paper), or S (Scissors): ")
         if user_input in ['R', 'P', 'S']:
             return user_input
-        return ("Invalid input! Try again.")
+        else:
+            print("Invalid input! Try again.")
 
 
 #   Retrieve: randomly-generated value between 0-2.
@@ -89,7 +90,7 @@ def play_again():
         elif repeat == 'N':
             return False
         else:
-            return ("Invalid input! Please enter Y or N.")
+            return "Invalid input! Please enter Y or N."
 
 
 # def user_greeting(name):
