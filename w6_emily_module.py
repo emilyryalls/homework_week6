@@ -76,7 +76,7 @@ def return_results(result, scores):
 def main():
     scores = {'Your score': 2, 'Computer score': 1}
     result = 'Computer wins!'
-    amend_score(result, scores)
+    amend_scores(result, scores)
     print(scores)
     result = 'You Win'
     scores = {'Your score:': 2, 'Computer score:': 1}
