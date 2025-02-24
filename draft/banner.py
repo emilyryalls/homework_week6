@@ -125,3 +125,18 @@ def main():
 # Ensure the main function is called when the script is run
 if __name__ == "__main__":
     main()
+
+
+# def solitaire_banner():
+#     banner = '      \u2554' + '\u2550'*59 + '\u2557' + '\n'
+#     banner += "\u2551  \u2660  \u2665  \u2666  \u2663    L E T ' S   P L A Y   S O L I T A I R E    \u2663  \u2666  \u2665  \u2660  \u2551\n"
+#     banner += '      \u255a' + '\u2550'*59 + '\u255D'
+#     return banner
+
+# def solitaire_banner():
+#     banner = f"""
+#           ╔═══════════════════════════════════════════════════════════╗
+#     ║  ♠  ♥  ♦  ♣    L E T ' S   P L A Y   S O L I T A I R E    ♣  ♦  ♥  ♠  ║
+#           ╚═══════════════════════════════════════════════════════════╝
+#     """
+#     return banner
