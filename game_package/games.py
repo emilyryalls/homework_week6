@@ -4,7 +4,6 @@
 # 3. Print the results of scores of user and computer after each round
 # 4. Asking the user if the want to replay the game or end the game.
 
-
 # get_user_greeting function returns "message" as a f-string
 def get_user_greeting(game_name):
     """
@@ -13,8 +12,8 @@ def get_user_greeting(game_name):
     :param game_name: str
     :return: str
     """
-    name = input("Please Enter Your Name: ").capitalize()
-    message = f"\u2551 Hi \033[95m{name}\033[0m! Welcome to Get into Tech Games 2025!\n\u2551 Let's play a game of \033[95m{game_name}\033[0m!\n\u2551 Will you be able to beat me?\n\u2551 Let's find out!"
+    name = input("\u2605 Please Enter Your Name: ").capitalize()
+    message = f"\n\u2551 Hi \033[95m{name}\033[0m! Welcome to Get into Tech Games 2025!\n\u2551 Let's play a game of \033[95m{game_name}\033[0m!\n\u2551 Will you be able to beat me?\n\u2551 Let's find out!"
     return message
 
 
@@ -27,9 +26,9 @@ def amend_scores(result, scores):
     :param scores: dict
     :return: dict
     """
-    if result == "It's a draw":
+    if result == "It's a draw!":
         return scores
-    elif result == "Computer wins":
+    elif result == "\033[93mComputer wins! You lose! Better luck next time\033[0m!":
         scores["Computer score"] += 1
     else:
         scores["Your score"] += 1
@@ -52,6 +51,6 @@ def replay():
         if play_game_again == "Y":
             return "\u2551 \033[92mPlaying again!\033[0m"
         elif play_game_again == "N":
-            return "\033[92m\u2551 Thank you for playing...\n\u2551 Returning back to game menu...\033[0m"
+            return "\033[92m\u2551 Thank you for playing...\033[0m"
         else:
             print("\u2551 \033[91mInvalid input! Please try again (only type y or n).\033[0m")

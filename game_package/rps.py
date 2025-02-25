@@ -43,11 +43,11 @@ def determine_rps_winner(human_rps, computer_rps):
     if human_rps == computer_rps:
         return "It's a draw!"
     elif human_rps == 'Rock' and computer_rps == 'Paper':
-            return '\033[93mComputer wins! You lose! Better luck next time\033[0m!'
+            return "\033[93mComputer wins! You lose! Better luck next time\033[0m!"
     elif human_rps == 'Paper' and computer_rps == 'Scissors':
-            return '\033[93mComputer wins! You lose! Better luck next time\033[0m!'
+            return "\033[93mComputer wins! You lose! Better luck next time\033[0m!"
     elif human_rps == 'Scissors' and computer_rps == 'Rock':
-            return '\033[93mComputer wins! You lose! Better luck next time!\033[0m'
+            return "\033[93mComputer wins! You lose! Better luck next time\033[0m!"
     else:
         return '\033[93mCongratulations! You win!\033[0m'
 
