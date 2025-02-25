@@ -79,7 +79,7 @@ def play_solitaire():
     :return: str
     """
     banner = create_banner("welcome to solitaire", 96)
-    message = "\n\n\u2551\033[91m Thank you for choosing Solitaire.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu.\033[0m\n"
+    message = "\n\n\u2551\033[91m Thank you for choosing Solitaire.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mPlease choose another option.\033[0m\n"
     return banner + message
 
 
@@ -93,7 +93,7 @@ def play_tictactoe():
     :return: str
     """
     banner = create_banner("welcome to tic-tac-toe", 96)
-    message = "\n\n\u2551\033[91m Thank you for choosing Tic-Tac-Toe.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu.\033[0m\n"
+    message = "\n\n\u2551\033[91m Thank you for choosing Tic-Tac-Toe.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mPlease choose another option.\033[0m\n"
     return banner + message
 
 
