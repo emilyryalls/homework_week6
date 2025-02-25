@@ -9,9 +9,9 @@
 def get_user_greeting(name, game_name):
     """
     This function takes the player's name and combines it with a predetermined welcome message to introduce the game.
-    This function also adds the game name which the user has chosen based on the integer between 1-3.
+    This function also adds the game name via string input.
     :param name: str
-    :param game_name: int
+    :param game_name: str
     :return: str
     """
     name = input("Please Enter Your Name: ").capitalize()
