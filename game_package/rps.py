@@ -3,10 +3,10 @@ import random
 def get_user_choice():
     # CHANGE TO NEW INPUT
     choices = {'R': 'Rock', 'P': 'Paper', 'S': 'Scissors'}
-    player_choice = input('Please choose Rock (R), Paper (P), or Scissors (S): ').upper()
+    player_choice = input('\u2551 \033[95mPlease choose Rock (R), Paper (P), or Scissors (S):\033[0m ').upper()
     while player_choice not in choices:
         # ALSO CHANGE
-        player_choice = input('Invalid choice! Please enter R, P, or S: ').upper()
+        player_choice = input('\u2551 \033[91mInvalid choice! Please enter R, P, or S:\033[0m ').upper()
     return choices[player_choice]
 
 def get_computer_choice():
@@ -31,15 +31,15 @@ def determine_rps_winner(human_rps, computer_rps):
     :return: str
     """
     if human_rps == computer_rps:
-        return "It's a draw"
+        return "It's a draw!"
     elif human_rps == 'Rock' and computer_rps == 'Paper':
-            return 'Computer wins'
+            return '\033[93mComputer wins! You lose! Better luck next time\033[0m!'
     elif human_rps == 'Paper' and computer_rps == 'Scissors':
-            return 'Computer wins'
+            return '\033[93mComputer wins! You lose! Better luck next time\033[0m!'
     elif human_rps == 'Scissors' and computer_rps == 'Rock':
-            return 'Computer wins'
+            return '\033[93mComputer wins! You lose! Better luck next time!\033[0m'
     else:
-        return 'You win!'
+        return '\033[93mCongratulations! You win!\033[0m'
 
 
 def main():
