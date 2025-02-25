@@ -73,6 +73,7 @@ def display_menu(title: str, games: list):
     return border + menu_title + border + game_names + border
 
 
+
 #   Play function to take us to Solitaire.
 #   Is incorporated in the menu and can be used within a loop to access the game.
 #   For now, only returns a predetermined message as game is not developed.
@@ -83,7 +84,7 @@ def play_solitaire():
     :return: str
     """
     banner = create_banner("welcome to solitaire", 96)
-    message = "\n\n\u2551\033[91m Thank you for choosing Solitaire.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu.\033[0m\n"
+    message = "\n\n\u2551\033[91m Thank you for choosing Solitaire.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu...\033[0m\n"
     return banner + message
 
 
@@ -102,9 +103,9 @@ def play_rps():
     while end != "\033[92m\u2551 Thank you for playing...\n\u2551 Returning back to game menu...\033[0m":
         # function get user choice retrieves Rock Paper or Scissors,
         human_rps = get_user_choice()
-        print(f"\nYou chose: \033[96m{human_rps}\033[0m")
+        print(f"\nYou chose: \033[94m{human_rps}\033[0m")
         computer_rps = get_computer_choice()
-        print(f"The computer chose: \033[96m{computer_rps}\033[0m\n")
+        print(f"The computer chose: \033[94m{computer_rps}\033[0m\n")
         result = determine_rps_winner(human_rps, computer_rps)
         amend_scores(result, scores)
         print(return_results(result, scores))
@@ -122,7 +123,7 @@ def play_tictactoe():
     :return: str
     """
     banner = create_banner("welcome to tic-tac-toe", 96)
-    message = "\n\n\u2551\033[91m Thank you for choosing Tic-Tac-Toe.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu.\033[0m\n"
+    message = "\n\n\u2551\033[91m Thank you for choosing Tic-Tac-Toe.\n\033[0m\u2551 \033[91mUnfortunately this game is currently under development.\n\033[0m\u2551 \033[91mAutomatically returning you back to the game menu...\033[0m\n"
     return banner + message
 
 
@@ -136,6 +137,7 @@ def replay():
             return "\033[92m\u2551 Thank you for playing...\n\u2551 Returning back to game menu...\033[0m"
         else:
             print("\u2551 \033[91mInvalid input! Please try again (only type y or n).\033[0m")
+
 
 # Function to select a game based on the integer the user inputs.
 def choose_game():
@@ -151,7 +153,7 @@ def choose_game():
     """
     while True:
         print(display_menu("game menu", ["solitaire", "rock, paper, scissors", "tic-tac-toe"]))
-        choice = input("\033[97mEnter your choice (1/2/3 or Q for QUIT): \033[0m").upper()
+        choice = input("\033[97mEnter a number fom 1/2/3 to select a game or Q to QUIT: \033[0m").upper()
 
         if choice == '1':
             print(add_border("Game One", 90))

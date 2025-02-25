@@ -110,7 +110,7 @@ def choose_game():
     :return: ???
     """
     while True:
-        choice = input("\033[97mEnter your choice (1/2/3): \033[0m").upper()
+        choice = input("\033[97mEnter your choice to play a game from the options above (1/2/3): \033[0m").upper()
 
         if choice == '1':
             print(add_border("Game One", 90))

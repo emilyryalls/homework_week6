@@ -4,7 +4,8 @@
 # 3. Print the results of scores of user and computer after each round
 # 4. Asking the user if the want to replay the game or end the game.
 
-# get_user_greeting function returns "message" as a f-string
+# get_user_greeting function returns "message" as a f-string.
+# This function provides a game-specific prompt.
 def get_user_greeting(game_name):
     """
     This function takes the player's name and combines it with a predetermined welcome message to introduce the game.
@@ -15,6 +16,25 @@ def get_user_greeting(game_name):
     name = input("\u2605 Please Enter Your Name: ").capitalize()
     message = f"\n\u2551 Hi \033[95m{name}\033[0m! Welcome to Get into Tech Games 2025!\n\u2551 Let's play a game of \033[95m{game_name}\033[0m!\n\u2551 Will you be able to beat me?\n\u2551 Let's find out!"
     return message
+
+
+# This is a function that provides a general introductory message of the developer's choice.
+def get_user_intro(first_prompt:str, second_prompt:str, third_prompt:str) -> str:
+    """
+    This function retrieves the name of the user and generates an introductory message of the developer's choice.\n
+    > first_prompt: enables the developer to input a suitable question to ask the user.\n
+    > second_prompt: enables the developer to input a message to greet the user.\n
+    > third_prompt: enables the developer to input a message after the user's name has been retrieved.
+    :param first_prompt: str
+    :param second_prompt: str
+    :param second_prompt: str
+    :return: str
+    """
+    name = input(f"\n{first_prompt}" )
+    # message = "\u2605"*103 + f"\nHi {name}! {second_prompt}" + "\n" + "\u2605"*103
+    message = f"\n{second_prompt}{name}{third_prompt}\n"
+    banner = "\n" + "\u2605" * len(message)
+    return banner + message + banner
 
 
 # function amend_scores returns the scores as per the result, after the user
@@ -54,3 +74,8 @@ def replay():
             return "\033[92m\u2551 Thank you for playing...\033[0m"
         else:
             print("\u2551 \033[91mInvalid input! Please try again (only type y or n).\033[0m")
+
+
+# print(get_user_intro("Hey! I'm computer350, what's your name? ", "\nThat's an awesome name! Hi ",
+#                          ". We're going to have lots of fun.\nAre you ready to play a game?"))
+
