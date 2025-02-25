@@ -10,7 +10,6 @@ def get_user_greeting(game_name):
     """
     This function takes the player's name and combines it with a predetermined welcome message to introduce the game.
     This function also adds the game name via string input.
-    :param name: str
     :param game_name: str
     :return: str
     """
