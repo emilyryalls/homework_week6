@@ -61,12 +61,13 @@ def display_menu(title: str, games: list):
     :param games: list
     :return: None
     """
-    menu_title = pyfiglet.figlet_format(title, font="alligator", width=103)
+    menu_title = pyfiglet.figlet_format(title, font="alligator", width=150)
     border = "\n" + "\u2605" * 103 + "\n"
     game_names = ""
     for index, name in enumerate(games, start =1):
         game_names += f"\n\u2551\033[1;97m{index: 10d} \u2605 {name.title()}\033[0m\n"
     return border + menu_title + border + game_names + border
+
 
 
 #   Play function to take us to Solitaire.
