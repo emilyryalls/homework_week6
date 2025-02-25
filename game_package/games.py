@@ -6,7 +6,7 @@
 
 
 # get_user_greeting function returns "message" as a f-string
-def get_user_greeting(name, game_name):
+def get_user_greeting(game_name):
     """
     This function takes the player's name and combines it with a predetermined welcome message to introduce the game.
     This function also adds the game name via string input.

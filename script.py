@@ -14,9 +14,9 @@ from game_package.games import get_user_greeting, amend_scores, replay, return_r
 
 scores = {"Your score": 0, "Computer score": 0}
 end = None
-name = None
 
-user_greeting = get_user_greeting(name, 'Rock, Paper, Scissors')
+
+user_greeting = get_user_greeting( game_name='Rock, Paper, Scissors')
 print(user_greeting)
 while end != "Thank you for playing":
     # function get user choice retrieves Rock Paper or Scissors,
