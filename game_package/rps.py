@@ -1,14 +1,22 @@
 import random
 
+# the function get_user_choice get user input and stores it as a dictionary with key of "R/P/S" with
+# assigned values of rock, paper and scissors respectively
 def get_user_choice():
-    # CHANGE TO NEW INPUT
+    """
+    This function returns the user choice from the options provided by choosing teh first alphabet of the option.
+    The while loop prompts the user to pick one of the option which is mentioned in the preset message.
+    :return: dictionary
+    """
     choices = {'R': 'Rock', 'P': 'Paper', 'S': 'Scissors'}
     player_choice = input('\u2551 \033[95mPlease choose Rock (R), Paper (P), or Scissors (S):\033[0m ').upper()
     while player_choice not in choices:
-        # ALSO CHANGE
         player_choice = input('\u2551 \033[91mInvalid choice! Please enter R, P, or S:\033[0m ').upper()
     return choices[player_choice]
 
+
+# The function get_computer_choice captures computer input as a dictionary which is decided randomly
+# between number 0-2 and taken but the index position corresponding to that number
 def get_computer_choice():
     """
     This function generates the computers random move in Rock, Paper, Scissors\n
@@ -22,6 +30,8 @@ def get_computer_choice():
 #     choices = ['Rock', 'Paper', 'Scissors']
 #     return random.choice(choices)
 
+
+# This function compares the user and computer
 def determine_rps_winner(human_rps, computer_rps):
     """
     This function compares the human and computer moves in Rock, Paper, Scissors,

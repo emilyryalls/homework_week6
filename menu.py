@@ -5,9 +5,10 @@ from game_package.games import get_user_greeting, amend_scores, replay, return_r
 
 def create_banner(message):
     """
-    This function generates and formats a custom decorative banner, given a string message.
+    This function generates and formats a custom decorative banner, enclosed by a box-line border.\n
+    The banner size adjusts based on the length of the input message.
     :param message: str
-    :return: banner
+    :return: str
     """
     text = message.title()
     line_length = 20 + len(text)  # Calculate horizontal line length
@@ -36,7 +37,8 @@ def display_menu(title, games):
 
 def play_solitaire():
     """
-    Function to call a game of Solitaire.
+    This function calls a game of Solitaire.\n
+    The display is a predetermined message to inform the user of current game development.
     :return: str
     """
     banner = create_banner("welcome to solitaire")
@@ -46,7 +48,7 @@ def play_solitaire():
 
 def play_rps():
     """
-    Function to call a game of Rock, Paper, Scissors.
+    This function calls a game of Rock, Paper, Scissors.
     :return: str
     """
     scores = {"Your score": 0, "Computer score": 0}
@@ -69,7 +71,8 @@ def play_rps():
 
 def play_tictactoe():
     """
-    Function to call a game of Tic=Tac-Toe.
+    This function calls a game of Tic=Tac-Toe.\n
+    The display is a predetermined message to inform the user of current game development.
     :return: str
     """
     banner = create_banner("welcome to tic-tac-toe")
@@ -79,7 +82,13 @@ def play_tictactoe():
 
 def choose_game():
     """
-    Function that chooses the game.
+    This function displays a game menu and prompts the user to select a game to play based on the displayed list.
+    The options are:\n
+    "1" for Game 1\n
+    "2" for Game 2\n
+    "3" for Game 3\n
+    "Q" for Quit to exit the game.\n
+    The function continues until a valid input is entered or the user quits.
     :return: ???
     """
     while True:
