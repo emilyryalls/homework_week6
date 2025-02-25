@@ -9,9 +9,9 @@ print(user_greeting)
 while end != "\033[92m\u2551 Thank you for playing...\n\u2551 Returning back to game menu...\033[0m":
     # function get user choice retrieves Rock Paper or Scissors,
     human_rps = get_user_choice()
-    print(f"\u2551 You chose: {human_rps}")
+    print(f"\nYou chose: \033[96m{human_rps}\033[96m")
     computer_rps = get_computer_choice()
-    print(f"\u2551 The computer chose: {computer_rps}\n")
+    print(f"The computer chose: \033[96m{computer_rps}\033[0m\n")
     result = determine_rps_winner(human_rps, computer_rps)
     amend_scores(result, scores)
     print(return_results(result, scores))
