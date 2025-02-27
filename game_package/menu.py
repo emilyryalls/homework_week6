@@ -1,5 +1,16 @@
 import pyfiglet
-from setuptools.command.egg_info import manifest_maker
+# To import the pyfiglet library, make sure you already have pyfiglet installed.
+# To install:
+#   1) Go to settings (on macbook you can find this by clicking the "PyCharm" tab next to the apple logo)
+#   2) Click on "settings"
+#   3) On the search bar (next to the magnifying glass icon), type "Python Interpreter" and click on that.
+#   4) Once you've clicked, under the title "package" you can see a package called "pip".
+#   5) Click on "pip" and search "pyfiglet"
+#   6) On the bottom right hand side you'll see what says "install package", click on this and wait.
+#   7) Once it has been installed, click "close" and pyfiglet will be added onto your "package" list.
+#   8) Now when you run import pyfiglet, it may show a yellow or red line, hover over the "pyfiglet" and click "add requirement",
+#           this will automatically add pyfiglet to requirements.txt.
+#           if you click on the requirements.txt file, it will say: pyfiglet~=1.0.2 which means you're ready to go!
 
 
 #   Create a banner for title texts.
