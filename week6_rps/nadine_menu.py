@@ -88,7 +88,7 @@ def play_solitaire():
     return banner + message
 
 
-#   Play function to take us to Solitaire.
+#   Play function to take us to Rock Paper Scissors.
 #   Is incorporated in the menu and can be used within a loop to access the game.
 def play_rps():
     """

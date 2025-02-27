@@ -17,8 +17,9 @@ print(menu)
 #   Select A Game From The Menu Options:
 choose_game()
 # unfortunately, this function is not flexible: although you can adjust the game names on the display_menu() function, it doesn't change the names or options on this function.
-# improvement: to instead create a dictionary or list with keys (numbers) and values (strings) that can be changed.
-# limitation: cannot add more loops.
+# Improvement: to instead create a dictionary or list with keys (numbers) and values (strings) that can be changed.
+# Limitation: I'm not sure you can add more loops on the script like how we add ["snakes & ladders", "pacman", "chess", "monopoly"].
+#               Unless there's a way to iterate through the dictionary/list based on what was chosen.
 
 #   Adding Border/Banner: to show each section of the game.
 print(add_border("Game Two", 90))
